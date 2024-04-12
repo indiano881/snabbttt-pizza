@@ -3,7 +3,7 @@ import {getImageURL} from "../../utils/functions"
 import {useState} from "react"
 
 
-const Card = ({name, image, ingredients, price, amountAvaible}) => {
+const Card = ({name, image, ingredients, price, amountAvaible, totalPrice, setTotalPrice, totalPizzas,setTotalPizzas}) => {
 const [amountPizza, setAmountPizza] = useState(0);
 const [isPizzaFinish, setPizzaFinish] = useState(false)
 
@@ -14,6 +14,8 @@ const addPizza= () => {
 
 
     setAmountPizza(pizza=> pizza+1)
+    setTotalPizzas(totalPizzas=> totalPizzas+1)
+    setTotalPrice(totalPrice=> totalPrice+ price )
 }
 
 const removePizza = () => {
