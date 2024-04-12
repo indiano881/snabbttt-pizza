@@ -86,3 +86,10 @@ export const RestaurantObj3 = {
   content2: "Cozy and relaxing atmosphere. Fit´s for romantic dining as well joyfull family momnets",
   image: "restaurant3.jpg"
 }
+
+export const RestaurantObj4 = {
+  name: "Snabbttt Pizza",
+  content1: "Our amazing staff celebreting the prize for Pizza of the Year",
+  content2: "We also have Visita, HCCP and Tripadvisor quality cerificate!",
+  image: "restaurant4.jpg"
+}
