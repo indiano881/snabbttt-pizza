@@ -37,7 +37,7 @@ export const pizzaData = [
     ingredients: "Tomato, mozzarella, and pepperoni",
     price: 150,
     image: "salamino.jpg",
-    soldOut: true,
+    soldOut: false,
     amountAvaible: 5
   },
   {
@@ -48,6 +48,22 @@ export const pizzaData = [
     soldOut: false,
     amountAvaible: 7
   },
+  {
+    name: "Pizza Nutella",
+    ingredients: "Nutella, strawberries, chocholate and sugar",
+    price: 150,
+    image: "nutella.jpg",
+    soldOut: false,
+    amountAvaible: 5
+  },
+  {
+    name: "Pizza God Forgive Me ",
+    ingredients: "Tomato, mozzarella, ham, ananas, and basil",
+    price: 636,
+    image: "ananas.jpg",
+    soldOut: false,
+    amountAvaible: 1
+  }
 ];
 
 export const RestaurantObj = {
@@ -62,4 +78,11 @@ export const RestaurantObj2 = {
   content1: "Ormingeringen 36, Saltsjö-Boo",
   content2: "+46 (0)725649933",
   image: "restaurant2.jpg"
+}
+
+export const RestaurantObj3 = {
+  name: "Snabbttt Pizza",
+  content1: "In a family driven restaurant you will find amazing and friendly staff",
+  content2: "Cozy and relaxing atmosphere. Fit´s for romantic dining as well joyfull family momnets",
+  image: "restaurant3.jpg"
 }

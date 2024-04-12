@@ -1,7 +1,8 @@
 import styles from "./Restaurant.module.css"
 
 import RestaurantBottom from "../RestaurantBottom"
-import { RestaurantObj, RestaurantObj2 } from "../../data/data.js"
+import RestaurantCenter from "../RestaurantCenter/index.jsx"
+import { RestaurantObj, RestaurantObj2, RestaurantObj3 } from "../../data/data.js"
 
 
 function Restaurant() {
@@ -9,6 +10,7 @@ function Restaurant() {
         <div className={styles.container}>
             
             <RestaurantBottom props={RestaurantObj}/>
+            <RestaurantCenter props={RestaurantObj3}/>
             <RestaurantBottom props={RestaurantObj2}/>
             
         </div>

@@ -36,7 +36,7 @@ const removePizza = () => {
             <img className={!isPizzaFinish ? styles.imagePizza: styles.imageGrey} src={getImageURL(image)} alt={name} />
             <h2>{name}</h2>
             <h4>{ingredients}</h4>
-            <h4>{price}</h4>
+            <h4>{price} SEK</h4>
             <h4>Pizzasavailable: {(amountAvaible-amountPizza)>=0 ? amountAvaible-amountPizza : "OUT OF STOCK"} Order pizzas are: {amountAvaible>=amountPizza ? amountPizza: "ORDER EXCEED QUANTITY AVAILABLKE"}</h4>
             <p className={styles.button} onClick={addPizza}>+</p>
             <p className={styles.button} onClick={removePizza}>-</p>
