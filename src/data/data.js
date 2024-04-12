@@ -63,7 +63,24 @@ export const pizzaData = [
     image: "ananas.jpg",
     soldOut: false,
     amountAvaible: 1
+  },
+  {
+    name: "Pizza Zucchine e Pecorino",
+    ingredients: "Mozzarella, zucchine and pecorino cheese",
+    price: 145,
+    image: "zucchine.jpg",
+    soldOut: false,
+    amountAvaible: 4
+  },
+  {
+    name: "Calzone prosciutto",
+    ingredients: "Half baked with Tomato, mozzarella, ham, mushrooms, and basil",
+    price: 185,
+    image: "calzone.jpg",
+    soldOut: false,
+    amountAvaible: 6
   }
+
 ];
 
 export const RestaurantObj = {
