@@ -8,7 +8,7 @@ const [amountPizza, setAmountPizza] = useState(0);
 const [isPizzaFinish, setPizzaFinish] = useState(false)
 
 const addPizza= () => {
-    if (amountPizza===amountAvaible-1) {
+    if (amountPizza>=amountAvaible-1) {
         setPizzaFinish(true)
     }
 
@@ -17,7 +17,12 @@ const addPizza= () => {
 }
 
 const removePizza = () => {
-    
+    if (amountPizza<=amountAvaible) {
+        setPizzaFinish(false)
+    }
+
+
+
         if (amountPizza===0) {
             return
         } else {
@@ -32,7 +37,7 @@ const removePizza = () => {
             <h2>{name}</h2>
             <h4>{ingredients}</h4>
             <h4>{price}</h4>
-            <h4>Pizzasavailable: {amountAvaible} Order pizzas are: {amountPizza}</h4>
+            <h4>Pizzasavailable: {(amountAvaible-amountPizza)>=0 ? amountAvaible-amountPizza : "OUT OF STOCK"} Order pizzas are: {amountAvaible>=amountPizza ? amountPizza: "ORDER EXCEED QUANTITY AVAILABLKE"}</h4>
             <p className={styles.button} onClick={addPizza}>+</p>
             <p className={styles.button} onClick={removePizza}>-</p>
             {console.log(amountPizza)}

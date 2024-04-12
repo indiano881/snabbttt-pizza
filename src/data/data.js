@@ -5,7 +5,7 @@ export const pizzaData = [
     price: 60,
     image: "focaccia.jpg",
     soldOut: false,
-    amountAvaible: 6
+    amountAvaible: 3
     
   },
   {
@@ -22,7 +22,7 @@ export const pizzaData = [
     price: 120,
     image: "spinaci.jpg",
     soldOut: false,
-    amountAvaible: 8
+    amountAvaible: 5
   },
   {
     name: "Pizza Funghi",
@@ -30,7 +30,7 @@ export const pizzaData = [
     price: 120,
     image: "funghi.jpg",
     soldOut: false,
-    amountAvaible: 9
+    amountAvaible: 2
   },
   {
     name: "Pizza Salamino",

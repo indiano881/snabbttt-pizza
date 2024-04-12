@@ -20,6 +20,13 @@
 .imageGrey {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
+    width: 150px;
+    height: auto;
+}
+
+.imageGrey:hover {
+    -webkit-filter: grayscale(0);
+        filter: none;
 }
 
 @media screen and (min-width: 600px) {
@@ -28,7 +35,8 @@
         height: auto;
     }
 
-    .imagePizza {
+    .imagePizza,
+    .imageGrey {
         width: 200px;
         height: auto;
     }
