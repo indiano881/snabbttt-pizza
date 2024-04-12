@@ -1,11 +1,15 @@
 import styles from "./Restaurant.module.css"
+import {getImageURL} from "../../utils/functions.js"
 
 
-function Restaurant() {
+function Restaurant({props}) {
     return (
         <div className={styles.container}>
-            <img src="" alt= />
-            
+            <img src={getImageURL(props.image1)} alt={props.name} width={"200px"} height={"auto"}/>
+            <h2>{props.name}</h2>
+            <h4>{props.adress}</h4>
+            <h4>{props.phone}</h4>
+            <img src={getImageURL(props.image2)} alt={props.name} width={"200px"} height={"auto"}/>
         </div>
     )
 }

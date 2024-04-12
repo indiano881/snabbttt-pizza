@@ -43,7 +43,7 @@ export const pizzaData = [
   },
 ];
 
-export const Restaurant = {
+export const RestaurantObj = {
   name: "Snabbttt Pizza",
   adress: "Ormingeringen 36, Saltsjö-Boo",
   phone: "+46 (0)725649933",

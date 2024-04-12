@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom"
 import Header from "./components/Header"
 import Navigation from "./components/Navigation"
 import "./global.css"
+import Restaurant from "./components/Restaurant"
+import { RestaurantObj } from "./data/data"
 
 
 
@@ -15,7 +17,7 @@ function App() {
     <Header />
     <Navigation />
       <Routes>
-        <Route path="/" element={"hello world"}/>
+        <Route path="/" element={<Restaurant props={RestaurantObj} />}/>
         <Route path="order" element={"order"}/>
       </Routes>
     </>
