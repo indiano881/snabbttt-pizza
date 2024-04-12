@@ -1,0 +1,7 @@
+.header {
+    height: 80px;
+}
+
+.mainTitle {
+    font-size: calc(1.5rem + 3vw);
+}
