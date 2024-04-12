@@ -2,20 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px;
+    justify-content: space-between;
+    width: 100%;
     height: auto;
     margin: 16px;
+    text-align: center;
 }
 
 .imagePizza {
     width: 150px;
     height: auto;
 }
-.button {
-    border: 1px solid black;
-    padding: 4px;
-    background-color: aqua;
-}
+
 
 .imageGrey {
     -webkit-filter: grayscale(1);
@@ -29,6 +27,29 @@
         filter: none;
 }
 
+.buttonContainer {
+    width:40%;
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #edc84b;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+.pizzaName,
+.ingredients, 
+.price,
+.buttonContainer {
+    margin: 4px;
+}
 @media screen and (min-width: 600px) {
     .card { 
         width: 150px;
