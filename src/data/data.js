@@ -1,44 +1,52 @@
-const pizzaData = [
+export const pizzaData = [
   {
     name: "Focaccia",
     ingredients: "Bread with italian olive oil and rosemary",
-    price: 6,
-    photoName: "pizzas/focaccia.jpg",
+    price: 60,
+    image: "focaccia.jpg",
     soldOut: false,
   },
   {
     name: "Pizza Margherita",
-    ingredients: "Tomato and mozarella",
-    price: 10,
-    photoName: "pizzas/margherita.jpg",
+    ingredients: "Tomato and mozzarella",
+    price: 100,
+    image: "margherita.jpg",
     soldOut: false,
   },
   {
     name: "Pizza Spinaci",
-    ingredients: "Tomato, mozarella, spinach, and ricotta cheese",
-    price: 12,
-    photoName: "pizzas/spinaci.jpg",
+    ingredients: "Tomato, mozzarella, spinach, and ricotta cheese",
+    price: 120,
+    image: "spinaci.jpg",
     soldOut: false,
   },
   {
     name: "Pizza Funghi",
-    ingredients: "Tomato, mozarella, mushrooms, and onion",
-    price: 12,
-    photoName: "pizzas/funghi.jpg",
+    ingredients: "Tomato, mozzarella, mushrooms, and onion",
+    price: 120,
+    image: "funghi.jpg",
     soldOut: false,
   },
   {
     name: "Pizza Salamino",
-    ingredients: "Tomato, mozarella, and pepperoni",
-    price: 15,
-    photoName: "pizzas/salamino.jpg",
+    ingredients: "Tomato, mozzarella, and pepperoni",
+    price: 150,
+    image: "salamino.jpg",
     soldOut: true,
   },
   {
     name: "Pizza Prosciutto",
-    ingredients: "Tomato, mozarella, ham, aragula, and burrata cheese",
-    price: 18,
-    photoName: "pizzas/prosciutto.jpg",
+    ingredients: "Tomato, mozzarella, ham, aragula, and burrata cheese",
+    price: 180,
+    image: "prosciutto.jpg",
     soldOut: false,
   },
 ];
+
+export const Restaurant = {
+  name: "Snabbttt Pizza",
+  adress: "Ormingeringen 36, Saltsjö-Boo",
+  phone: "+46 (0)725649933",
+  image1: "restaurant1.jpg",
+  image2: "restaurant2.jpg"
+}
