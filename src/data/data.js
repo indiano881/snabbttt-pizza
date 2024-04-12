@@ -73,10 +73,10 @@ export const RestaurantObj = {
   image: "restaurant1.jpg",
   
 }
-export const RestaurantObj2 = {
+export const RestaurantObj4 = {
   name: "Snabbttt Pizza",
-  content1: "Ormingeringen 36, Saltsjö-Boo",
-  content2: "+46 (0)725649933",
+  content1: "We are located in Ormingeringen 36, Saltsjö-Boo",
+  content2: "For reservation phone: +46 (0)725649933",
   image: "restaurant2.jpg"
 }
 
@@ -87,7 +87,7 @@ export const RestaurantObj3 = {
   image: "restaurant3.jpg"
 }
 
-export const RestaurantObj4 = {
+export const RestaurantObj2 = {
   name: "Snabbttt Pizza",
   content1: "Our amazing staff celebreting the prize for Pizza of the Year",
   content2: "We also have Visita, HCCP and Tripadvisor quality cerificate!",

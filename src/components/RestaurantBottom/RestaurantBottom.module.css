@@ -1,3 +1,7 @@
+.container {
+    display: flex;
+}
+
 .image {
     margin: 8px;
     width: 40%;
@@ -10,6 +14,6 @@ nav {
     width: 60%;
 }
 .textcontainer {
-    width: 500px;
+    flex-grow: 1;
 }
 
