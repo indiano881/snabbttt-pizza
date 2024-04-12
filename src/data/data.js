@@ -52,8 +52,14 @@ export const pizzaData = [
 
 export const RestaurantObj = {
   name: "Snabbttt Pizza",
-  adress: "Ormingeringen 36, Saltsjö-Boo",
-  phone: "+46 (0)725649933",
-  image1: "restaurant1.jpg",
-  image2: "restaurant2.jpg"
+  content1: "We deliver the highest quality pizza here i Nacka kommun",
+  content2: "Use our order page to get the best food experience of your life",
+  image: "restaurant1.jpg",
+  
+}
+export const RestaurantObj2 = {
+  name: "Snabbttt Pizza",
+  content1: "Ormingeringen 36, Saltsjö-Boo",
+  content2: "+46 (0)725649933",
+  image: "restaurant2.jpg"
 }

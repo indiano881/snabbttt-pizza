@@ -5,7 +5,7 @@ import "./global.css"
 import Restaurant from "./components/Restaurant"
 import { RestaurantObj } from "./data/data"
 import OrderPage from "./components/OrderPage"
-
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -16,9 +16,11 @@ function App() {
     <Header />
     <Navigation />
       <Routes>
-        <Route path="/" element={<Restaurant props={RestaurantObj} />}/>
+        <Route path="/" element={<Restaurant />}/>
         <Route path="order" element={<OrderPage />}/>
       </Routes>
+
+      <Footer/>
     </>
   )
 }
