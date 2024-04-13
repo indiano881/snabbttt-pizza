@@ -3,14 +3,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 16px;
     text-align: center;
 }
 
 .imagePizza {
-    width: 150px;
+    width: 135px;
     height: auto;
 }
 
@@ -50,9 +50,9 @@
 .buttonContainer {
     margin: 4px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 725px) {
     .card { 
-        width: 150px;
+        width: 90%;
         height: auto;
     }
 

@@ -39,7 +39,7 @@ const removePizza = () => {
             <h2 className={styles.pizzaName}>{name}</h2>
             <h4 className={styles.ingredients}>{ingredients}</h4>
             <h4 className={styles.price}>{price} SEK</h4>
-            <h4>Pizzasavailable: {(amountAvaible-amountPizza)>=0 ? amountAvaible-amountPizza : "OUT OF STOCK"} Order pizzas are: {amountAvaible>=amountPizza ? amountPizza: "ORDER EXCEED QUANTITY AVAILABLKE"}</h4>
+            <h4>Available: {(amountAvaible-amountPizza)>=0 ? amountAvaible-amountPizza : "OUT OF STOCK"} Ordered pizzas: {amountAvaible>=amountPizza ? amountPizza: "ORDER EXCEED QUANTITY AVAILABLKE"}</h4>
             <div className={styles.buttonContainer}>
                 <p className={styles.button} onClick={addPizza}>+</p>
                 <p className={styles.button} onClick={removePizza}>-</p>
