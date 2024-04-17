@@ -35,7 +35,9 @@ function OrderPage() {
             isOpen={isShoppingButtonPressed} 
             onClose={closeBtn}
             totalPizzas={totalPizzas}
-            totalPrice={totalPrice}/>}
+            totalPrice={totalPrice}
+            setTotalPrice={setTotalPrice}
+            setTotalPizzas={setTotalPizzas}/>}
         </div>
         </>
     )

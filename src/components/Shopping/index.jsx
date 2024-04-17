@@ -1,6 +1,10 @@
 import styles from './Shopping.module.css'
 import Modal from '../Modal';
-const Shopping = ({isOpen, onClose, totalPizzas, totalPrice}) => {
+const Shopping = ({isOpen, onClose, totalPizzas, totalPrice, setTotalPrice, setTotalPizzas}) => {
+
+  const cancelBtn= () => {
+    console.log("Cancel")
+  }
     return (
         <>
         <Modal hasCloseBtn={true} isOpen={isOpen} onClose={onClose}>
@@ -8,6 +12,7 @@ const Shopping = ({isOpen, onClose, totalPizzas, totalPrice}) => {
           <h4>Total pizzas are : {totalPizzas}</h4>
           <h4>Total amount is : {totalPrice}</h4>
           <p>CONFIRM ORDER</p>
+          <p onClick={cancelBtn}>CANCEL ORDER</p>
         </Modal>
         </>
     )
