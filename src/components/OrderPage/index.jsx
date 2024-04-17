@@ -30,7 +30,12 @@ function OrderPage() {
             {console.log("totsl price is" + totalPrice)}
             {console.log("totsl PIZZAS is" + totalPizzas)}
             {console.log(isShoppingButtonPressed)}
-            {isShoppingButtonPressed && <Shopping isOpen={isShoppingButtonPressed} onClose={closeBtn}/>}
+            
+            {isShoppingButtonPressed && <Shopping 
+            isOpen={isShoppingButtonPressed} 
+            onClose={closeBtn}
+            totalPizzas={totalPizzas}
+            totalPrice={totalPrice}/>}
         </div>
         </>
     )

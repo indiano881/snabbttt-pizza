@@ -1,10 +1,13 @@
 import styles from './Shopping.module.css'
 import Modal from '../Modal';
-const Shopping = ({isOpen, hasCloseBtn = true, onClose, children}) => {
+const Shopping = ({isOpen, onClose, totalPizzas, totalPrice}) => {
     return (
         <>
         <Modal hasCloseBtn={true} isOpen={isOpen} onClose={onClose}>
-          <h2>BLABLA</h2>
+          <h2>Shopping cart</h2>
+          <h4>Total pizzas are : {totalPizzas}</h4>
+          <h4>Total amount is : {totalPrice}</h4>
+          <p>CONFIRM ORDER</p>
         </Modal>
         </>
     )
