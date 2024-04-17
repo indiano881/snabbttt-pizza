@@ -18,7 +18,7 @@
 .imageGrey {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
-    width: 150px;
+    width: 135px;
     height: auto;
 }
 
