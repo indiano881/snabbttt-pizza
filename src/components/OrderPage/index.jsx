@@ -2,6 +2,7 @@ import styles from "./OrderPage.module.css"
 import {pizzaData} from "../../data/data"
 import Card from "../Card"
 import OrderBar from "../OrderBar"
+import Shopping from "../Shopping"
 import { useState } from "react"
 
 
@@ -9,6 +10,9 @@ function OrderPage() {
     const [totalPrice, setTotalPrice] = useState(0)
     const [totalPizzas, setTotalPizzas] = useState(0);
     const [isShoppingButtonPressed, setShoppingButton] = useState(false)
+    const closeBtn = () => {
+        setShoppingButton(false)
+    }
 
     return (
         <>
@@ -26,6 +30,7 @@ function OrderPage() {
             {console.log("totsl price is" + totalPrice)}
             {console.log("totsl PIZZAS is" + totalPizzas)}
             {console.log(isShoppingButtonPressed)}
+            {isShoppingButtonPressed && <Shopping isOpen={isShoppingButtonPressed} onClose={closeBtn}/>}
         </div>
         </>
     )

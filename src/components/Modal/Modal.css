@@ -1,0 +1,25 @@
+.modal::backdrop {
+    background: #34343a;
+    opacity: 0.6;
+  }
+  
+  .modal {
+    background: #549f93;
+    border: 3px solid black;
+    border-radius: 20px;
+
+    height: auto;
+    width: 90%;
+    
+    padding: 16px;
+    position: relative;
+    overflow: auto;
+  }
+  
+  .modal-close-btn {
+    font-size: 12px;
+    position: absolute;
+    right: 12px;
+    top: 4px;
+  }
+  
